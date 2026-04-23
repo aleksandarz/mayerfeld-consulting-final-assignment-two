@@ -1,34 +1,19 @@
-const currentTallyDisplay = document.getElementById('current-tally');
-const finalTallyDisplay = document.getElementById('final-tally');
-const matchOverModal = document.getElementById('match-over-modal');
+import { startGame, jump, addPoint } from './game.js';
+
 const retryButton = document.getElementById('retry-action');
 
-let score = 0;
-let isGameRunning = false;
+startGame();
 
-function startGame() {
-    isGameRunning = true;
-    score = 0;
-    currentTallyDisplay.innerText = score;
-    matchOverModal.classList.add('hidden');
-}
-
-function addPoint() {
-    if (isGameRunning) {
-        score++;
-        currentTallyDisplay.innerText = score;
+document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space') {
+        jump();
     }
-}
+});
 
-function endGame() {
-    isGameRunning = false;
-    
-    finalTallyDisplay.innerText = score;
-    matchOverModal.classList.remove('hidden');
-}
+setInterval(() => {
+    addPoint();
+}, 100);
 
 retryButton.addEventListener('click', () => {
     startGame();
 });
-
-startGame();
