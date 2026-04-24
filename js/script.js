@@ -7,7 +7,7 @@ startButton.addEventListener('click', () => {
     startGame();
     startButton.style.display = 'none';
     playMusic();
-}); 
+});
 
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
