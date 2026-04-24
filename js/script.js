@@ -1,8 +1,13 @@
-import { startGame, jump, addPoint } from './game.js';
+import { startGame, jump, playMusic } from './game.js';
 
 const retryButton = document.getElementById('retry-action');
 
-startGame();
+const startButton = document.getElementById('start-button');
+startButton.addEventListener('click', () => {
+    startGame();
+    startButton.style.display = 'none';
+    playMusic();
+}); 
 
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
@@ -10,10 +15,8 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-setInterval(() => {
-    addPoint();
-}, 100);
 
 retryButton.addEventListener('click', () => {
     startGame();
+    playMusic();
 });
