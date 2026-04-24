@@ -8,12 +8,18 @@
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: antiquewhite;
     font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(5, 70, 5);
+    font-weight: bold;
 }
 
 #jump-arena {
@@ -25,6 +31,9 @@ body {
     border: 2px solid #333;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #jump-arena::after {
@@ -69,6 +78,11 @@ button {
     font-size: 16px;
     cursor: pointer;
     margin-top: 15px;
+    align-content: center;
+}
+
+#start-button{
+    align-self: center;
 }
 
 .hidden {
