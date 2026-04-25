@@ -1,6 +1,4 @@
-# Mayerfeld Consulting – Final Assignment Project
-
-A responsive business website developed as part of a **team collaboration project** for :contentReference[oaicite:0]{index=0}, a Berlin-based consulting firm focused on helping businesses grow through strategy, process optimization, and collaboration. :contentReference[oaicite:1]{index=1}
+# Mayerfeld Consulting – Final Assignment Project One
 
 ## Live Demo
 [Live Demo](https://mayerfeld-consulting-final-assignme-eight.vercel.app/)
