@@ -1,4 +1,4 @@
-# Mayerfeld Consulting – Final Assignment Project One
+# Mayerfeld Consulting – Final Assignment Project Two
 
 ## Live Demo
 [Live Demo](https://mayerfeld-consulting-final-assignme-eight.vercel.app/)
